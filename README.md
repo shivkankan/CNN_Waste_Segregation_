@@ -12,15 +12,10 @@ Improper waste disposal contributes to environmental degradation, increased land
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-The dataset comprises 2357 images depicting malignant and benign oncological conditions, sourced from the International Skin Imaging Collaboration (ISIC). These images were categorized based on the classification provided by ISIC, with each subset containing an equal number of images.
-In order to address the challenge of class imbalance, the Augmentor Python package (https://augmentor.readthedocs.io/en/master/) was employed to augment the dataset. This involved generating additional samples for all classes, ensuring that none of the classes had insufficient representation.
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The dataset comprises of images. There are 'cardboard', 'compost', 'glass', 'metal', 'paper', 'plastic', 'trash' total 7 different types of waste materials which are use for recycling.
 
 ## Conclusions
-The model is trained using the fit method with the specified number of epochs (epochs=30). The ModelCheckpoint and EarlyStopping callbacks are employed to monitor the validation accuracy during training. The ModelCheckpoint callback saves the model with the best validation accuracy, while the EarlyStopping callback stops training if the validation accuracy does not improve for a specified number of epochs (patience=5 in this case). These callbacks help prevent overfitting and ensure that the model converges to the best possible solution.
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The model is trained using the fit method with the specified number of epochs. 
 
 
 ## Technologies Used
@@ -30,6 +25,8 @@ Numpy
 Pandas
 Seaborn
 Tensorflow
+Keras
+PIL
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
